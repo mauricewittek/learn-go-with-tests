@@ -1,10 +1,7 @@
 package iteration
 
-func Repeat(character string, amount int) string {
-	var repeated string
-	for i := 0; i < amount; i++ {
-		repeated += character
-	}
+import "strings"
 
-	return repeated
+func Repeat(character string, amount int) string {
+	return strings.Repeat(character, amount)
 }
